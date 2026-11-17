@@ -1,0 +1,38 @@
+{
+  "name": "I3D",
+  "identifier": "com.atypicapp.i3d.fuente",
+  "subtitle": "Costes, inventario y pedidos de impresión 3D",
+  "description": "I3D es una app para gestionar un estudio de impresión 3D: calcula el coste y el precio de cada pieza a partir del archivo del laminador, lleva el inventario de filamentos, productos, ferretería y embalaje, y gestiona clientes, pedidos y presupuestos en PDF.\n\nSin cuentas, sin servidores y sin publicidad.\n\nAñade esta fuente una vez y SideStore te avisará de cada versión nueva.",
+  "iconURL": "https://raw.githubusercontent.com/Atypicapp/I3D/main/icono.png",
+  "website": "https://github.com/Atypicapp/I3D",
+  "tintColor": "#F28C28",
+  "apps": [
+    {
+      "name": "I3D",
+      "bundleIdentifier": "com.atypicapp.i3d",
+      "developerName": "Atypicapp",
+      "subtitle": "Calcula, organiza y vende tus impresiones 3D",
+      "localizedDescription": "Todo lo de tu estudio de impresión 3D en un sitio.\n\n• Calculadora de costes: importa el .gcode.3mf, .3mf o .gcode de Bambu Studio, OrcaSlicer, PrusaSlicer o Cura y calcula material, luz, desgaste, fallos, mano de obra y precio con niveles.\n• Filamentos por marca, tipo, acabado y color, con stock y avisos.\n• Productos impresos con fotos, vídeos y enlace al modelo (MakerWorld, Printables…).\n• Ferretería y embalaje con compras, proveedor y ubicación.\n• Clientes y pedidos con descuentos, envío, IVA y estados.\n• Presupuestos, albaranes y facturas proforma en PDF con tu logo.\n• Datos compartidos entre dos personas con una carpeta de iCloud Drive.\n\nPrivacidad: tus datos se guardan solo en tu dispositivo o en tu iCloud Drive.",
+      "iconURL": "https://raw.githubusercontent.com/Atypicapp/I3D/main/icono.png",
+      "tintColor": "#F28C28",
+      "category": "utilities",
+      "versions": [],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "screenshots": []
+    }
+  ],
+  "news": [
+    {
+      "title": "Bienvenido a I3D",
+      "identifier": "bienvenida-i3d",
+      "caption": "Calcula el precio de tus impresiones, lleva el inventario y gestiona tus pedidos desde el iPhone o el iPad.",
+      "date": "2026-11-17",
+      "tintColor": "#F28C28",
+      "appID": "com.atypicapp.i3d",
+      "notify": false
+    }
+  ]
+}
