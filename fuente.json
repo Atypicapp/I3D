@@ -18,6 +18,14 @@
       "category": "utilities",
       "versions": [
         {
+          "version": "0.6.0",
+          "date": "2026-11-18",
+          "localizedDescription": "Mejoras en toda la app.\r\nCorrecciones visuales.",
+          "downloadURL": "https://github.com/Atypicapp/I3D/releases/download/v0.6.0/I3D.ipa",
+          "size": 1732664,
+          "minOSVersion": "17.0"
+        },
+        {
           "version": "0.5.1",
           "date": "2026-11-17",
           "localizedDescription": "Corrección de errores",
