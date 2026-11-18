@@ -1,8 +1,11 @@
 # I3D
 
+![I3D](imagenes/cabecera.png)
+
 App para iPhone y iPad para gestionar un estudio de impresión 3D: calcula
-el coste y el precio de cada pieza, lleva el inventario y gestiona clientes,
-pedidos y presupuestos.
+el coste y el precio de cada pieza a partir del archivo del laminador, lleva
+el inventario, gestiona clientes, pedidos, cobros y la cola de impresión, y
+publica catálogos con hoja de pedido.
 
 **Privacidad:** los datos se guardan solo en tu dispositivo (o en la carpeta
 de iCloud Drive que tú elijas para compartirlos). Sin cuentas, sin
@@ -51,3 +54,16 @@ automática.
 
 En un minuto `fuente.json` se actualiza solo (pestaña **Actions**) y
 SideStore avisará a todos.
+
+## Capturas e imágenes de SideStore (solo el autor)
+
+- **Capturas**: súbelas a la carpeta [`capturas`](capturas) (Add file ›
+  Upload files). Se ordenan por nombre (`1-inicio.png`, `2-calcular.png`…)
+  y aparecen solas en SideStore. Para quitar una, bórrala.
+- **Cabecera** de la fuente: `imagenes/cabecera.png` (1500×500).
+- **Noticias**: la imagen de cada noticia es `imagenes/<identificador>.png`
+  (por ejemplo `imagenes/catalogos.png`).
+
+Al subir o cambiar algo en esas carpetas, `fuente.json` se actualiza solo
+(pestaña **Actions**). Las novedades de cada Release se limpian de símbolos
+de Markdown (#, **…) porque SideStore los mostraría tal cual.

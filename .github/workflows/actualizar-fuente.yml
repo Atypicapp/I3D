@@ -1,10 +1,18 @@
 name: Actualizar fuente
 
-# Cada vez que publicas una Release con un .ipa, añade esa versión a
-# fuente.json. SideStore lo ve y avisa a todos de la actualización.
+# - Al publicar una Release con un .ipa: añade esa versión a fuente.json.
+# - Al subir o borrar imágenes en capturas/ o imagenes/: actualiza las
+#   capturas, la cabecera y las imágenes de las noticias.
+# SideStore lee fuente.json y lo muestra todo.
 on:
   release:
     types: [published, edited]
+  push:
+    branches: [main]
+    paths:
+      - "capturas/**"
+      - "imagenes/**"
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -24,7 +32,11 @@ jobs:
           ref: main
 
       - name: Añadir la versión a fuente.json
+        if: github.event_name == 'release'
         run: python3 .github/scripts/actualizar_fuente.py
+
+      - name: Capturas, cabecera y noticias
+        run: python3 .github/scripts/actualizar_capturas.py
 
       - name: Guardar el cambio
         run: |
@@ -35,6 +47,10 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add fuente.json
-          git commit -m "Fuente: versión ${{ github.event.release.tag_name }}"
+          if [ "${{ github.event_name }}" = "release" ]; then
+            git commit -m "Fuente: versión ${{ github.event.release.tag_name }}"
+          else
+            git commit -m "Fuente: capturas e imágenes"
+          fi
           git pull --rebase origin main
           git push

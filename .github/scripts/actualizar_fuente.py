@@ -20,7 +20,23 @@ if not ipas:
     sys.exit("La Release no tiene ningún archivo .ipa adjunto.")
 ipa = ipas[0]
 
-notas = (release.get("body") or "").strip() or f"Versión {version}."
+import re
+
+
+def limpiar(texto):
+    """SideStore muestra el texto tal cual: se quitan los símbolos de Markdown."""
+    lineas = []
+    for l in texto.replace("\r\n", "\n").split("\n"):
+        l = re.sub(r"^\s*#{1,6}\s*", "", l)          # títulos ###
+        l = re.sub(r"\*\*(.+?)\*\*", r"\1", l)       # **negrita**
+        l = re.sub(r"(?<!\w)\*(.+?)\*(?!\w)", r"\1", l)  # *cursiva*
+        l = re.sub(r"`([^`]+)`", r"\1", l)            # `código`
+        l = re.sub(r"^(\s*)[-*]\s+", r"\1• ", l)      # viñetas
+        lineas.append(l.rstrip())
+    return re.sub(r"\n{3,}", "\n\n", "\n".join(lineas)).strip()
+
+
+notas = limpiar(release.get("body") or "") or f"Versión {version}."
 fecha = (release.get("published_at") or release.get("created_at") or "")[:10]
 
 with open("fuente.json", encoding="utf-8") as f:

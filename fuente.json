@@ -1,8 +1,8 @@
 {
   "name": "I3D",
   "identifier": "com.atypicapp.i3d.fuente",
-  "subtitle": "Costes, inventario y pedidos de impresión 3D",
-  "description": "I3D es una app para gestionar un estudio de impresión 3D: calcula el coste y el precio de cada pieza a partir del archivo del laminador, lleva el inventario de filamentos, productos, ferretería y embalaje, y gestiona clientes, pedidos y presupuestos en PDF.\n\nSin cuentas, sin servidores y sin publicidad.\n\nAñade esta fuente una vez y SideStore te avisará de cada versión nueva.",
+  "subtitle": "Costes, inventario, pedidos y catálogos de impresión 3D",
+  "description": "I3D es la app para llevar un estudio de impresión 3D desde el iPhone o el iPad: calcula el precio de cada pieza a partir del archivo del laminador, lleva el inventario, gestiona clientes, pedidos y cobros, organiza la cola de impresión y publica catálogos con hoja de pedido.\n\nSin cuentas, sin servidores propios y sin publicidad.\n\nAñade esta fuente una vez y SideStore te avisará de cada versión nueva.",
   "iconURL": "https://raw.githubusercontent.com/Atypicapp/I3D/main/icono.png",
   "website": "https://github.com/Atypicapp/I3D",
   "tintColor": "#F28C28",
@@ -12,7 +12,7 @@
       "bundleIdentifier": "com.atypicapp.i3d",
       "developerName": "Atypicapp",
       "subtitle": "Calcula, organiza y vende tus impresiones 3D",
-      "localizedDescription": "Todo lo de tu estudio de impresión 3D en un sitio.\n\n• Calculadora de costes: importa el .gcode.3mf, .3mf o .gcode de Bambu Studio, OrcaSlicer, PrusaSlicer o Cura y calcula material, luz, desgaste, fallos, mano de obra y precio con niveles.\n• Filamentos por marca, tipo, acabado y color, con stock y avisos.\n• Productos impresos con fotos, vídeos y enlace al modelo (MakerWorld, Printables…).\n• Ferretería y embalaje con compras, proveedor y ubicación.\n• Clientes y pedidos con descuentos, envío, IVA y estados.\n• Presupuestos, albaranes y facturas proforma en PDF con tu logo.\n• Publicaciones para Instagram y TikTok con tus fotos y los datos de impresión (nunca clientes ni precios).\n• Datos compartidos entre dos personas con una carpeta de iCloud Drive.\n\nPrivacidad: tus datos se guardan solo en tu dispositivo o en tu iCloud Drive.",
+      "localizedDescription": "Todo tu estudio de impresión 3D en un sitio.\n\nCALCULAR\n• Importa el .gcode.3mf, .3mf o .gcode de Bambu Studio, OrcaSlicer, PrusaSlicer o Cura.\n• Coste real: material, luz, desgaste, fallos, mano de obra, embalaje y gastos fijos.\n• Precio con niveles, redondeo, mínimo por pieza y precios por volumen.\n• Productos de varias placas (bola + decoración + nombre), cada pieza con sus filamentos.\n\nINVENTARIO\n• Filamentos por marca, tipo, acabado y color, con stock y avisos.\n• Productos con fotos, vídeos y enlace al modelo (MakerWorld, Printables…).\n• Ferretería y embalaje con proveedores.\n\nPEDIDOS Y CLIENTES\n• Presupuestos, albaranes y proformas en PDF con tu logo.\n• Clientes como CRM: compras, seguimientos e historial.\n• Pedido desde un mensaje o una captura (con Apple Intelligence si está disponible).\n• Cobros: señales, pagos parciales y recordatorios.\n• Cola de impresión con horarios y plan para gastar menos filamento.\n\nVENDER\n• Catálogos en PDF, imagen para redes y página web gratis con hoja de pedido.\n• Publicaciones para Instagram y TikTok (nunca con datos de clientes ni precios).\n• Estadísticas, gastos fijos y resumen por mes, trimestre y año.\n\nVarios estudios, datos compartidos entre dos personas con iCloud Drive y diseño Liquid Glass en iOS 26.\n\nPrivacidad: tus datos se guardan solo en tu dispositivo o en tu iCloud Drive.",
       "iconURL": "https://raw.githubusercontent.com/Atypicapp/I3D/main/icono.png",
       "tintColor": "#F28C28",
       "category": "utilities",
@@ -44,7 +44,7 @@
         {
           "version": "0.8.0",
           "date": "2026-11-18",
-          "localizedDescription": "Unir cambios de la carpeta compartida\r\nCobros (Inicio › Cobros, y en cada pedido)\r\nHoja de pedido del catálogo",
+          "localizedDescription": "Unir cambios de la carpeta compartida\nCobros (Inicio › Cobros, y en cada pedido)\nHoja de pedido del catálogo",
           "downloadURL": "https://github.com/Atypicapp/I3D/releases/download/v0.8.0/I3D.ipa",
           "size": 2747958,
           "minOSVersion": "17.0"
@@ -52,7 +52,7 @@
         {
           "version": "0.7.0",
           "date": "2026-11-18",
-          "localizedDescription": "### **Lo nuevo**\r\n\r\n1. Clientes como CRM:\r\n\r\n- Cada cliente tiene una etapa que la app calcula sola: contacto, con presupuesto, cliente, recurrente o inactivo (más de 120 días sin pedir).\r\n- Ficha con compras, gasto, ticket medio, lo que más pide, cómo os conoció, etiquetas e historial de contactos.\r\n- Seguimientos con aviso a las 10:00, que también aparecen en Inicio.\r\n- Filtros para ver quién compró y quién no.\r\n\r\n2. Estadísticas (Inicio › Herramientas):\r\n\r\n- Ventas, beneficio, porcentaje de presupuestos aceptados y clientes que repiten.\r\n- Gráfica por meses, productos más pedidos, colores y combinaciones más pedidas, material gastado, canales y días de la semana.\r\n- Recomendaciones automáticas, por ejemplo presupuestos sin respuesta o productos con poco margen.\r\n- Pedido desde mensaje:\r\n- Pegas un email o DM, o eliges una captura, y la app lee el texto.\r\n- Con Apple Intelligence, o con un método más simple si no está disponible, saca el cliente, los productos y las cantidades.\r\n- Prepara un resumen para que el cliente dé el OK (copiar, WhatsApp, Instagram) y crea el presupuesto.\r\n- Respuestas rápidas: 9 plantillas de inicio (primer mensaje, precios, envíos, llamada a la acción…). Se pueden crear con Apple Intelligence, usar con un cliente concreto, y quedan apuntadas en su historial.\r\n- Responder comentario: pegas el comentario y te da 3 respuestas, siempre sin precios.\r\n- Calcular con carpetas: agrupar, filtrar y ordenar. Para mover un cálculo a una carpeta, mantén pulsado sobre él.\r\n\r\n3. Pedidos:\r\n\r\n- Prioridad: baja, normal, alta o urgente.\r\n- Agrupar por estado, prioridad, fecha de entrega, cliente o mes.\r\n- Ordenar a mano arrastrando, con el botón «Ordenar».\r\n- Plan de impresión: si hay 2 o más pedidos aceptados, sale un aviso. El plan: agrupa las piezas con los mismos colores; forma tandas que caben en el AMS; avisa si falta filamento; da consejos para gastar menos en purga.",
+          "localizedDescription": "Lo nuevo\n\n1. Clientes como CRM:\n\n• Cada cliente tiene una etapa que la app calcula sola: contacto, con presupuesto, cliente, recurrente o inactivo (más de 120 días sin pedir).\n• Ficha con compras, gasto, ticket medio, lo que más pide, cómo os conoció, etiquetas e historial de contactos.\n• Seguimientos con aviso a las 10:00, que también aparecen en Inicio.\n• Filtros para ver quién compró y quién no.\n\n2. Estadísticas (Inicio › Herramientas):\n\n• Ventas, beneficio, porcentaje de presupuestos aceptados y clientes que repiten.\n• Gráfica por meses, productos más pedidos, colores y combinaciones más pedidas, material gastado, canales y días de la semana.\n• Recomendaciones automáticas, por ejemplo presupuestos sin respuesta o productos con poco margen.\n• Pedido desde mensaje:\n• Pegas un email o DM, o eliges una captura, y la app lee el texto.\n• Con Apple Intelligence, o con un método más simple si no está disponible, saca el cliente, los productos y las cantidades.\n• Prepara un resumen para que el cliente dé el OK (copiar, WhatsApp, Instagram) y crea el presupuesto.\n• Respuestas rápidas: 9 plantillas de inicio (primer mensaje, precios, envíos, llamada a la acción…). Se pueden crear con Apple Intelligence, usar con un cliente concreto, y quedan apuntadas en su historial.\n• Responder comentario: pegas el comentario y te da 3 respuestas, siempre sin precios.\n• Calcular con carpetas: agrupar, filtrar y ordenar. Para mover un cálculo a una carpeta, mantén pulsado sobre él.\n\n3. Pedidos:\n\n• Prioridad: baja, normal, alta o urgente.\n• Agrupar por estado, prioridad, fecha de entrega, cliente o mes.\n• Ordenar a mano arrastrando, con el botón «Ordenar».\n• Plan de impresión: si hay 2 o más pedidos aceptados, sale un aviso. El plan: agrupa las piezas con los mismos colores; forma tandas que caben en el AMS; avisa si falta filamento; da consejos para gastar menos en purga.",
           "downloadURL": "https://github.com/Atypicapp/I3D/releases/download/v0.7.0/I3D.ipa",
           "size": 2223996,
           "minOSVersion": "17.0"
@@ -60,7 +60,7 @@
         {
           "version": "0.6.0",
           "date": "2026-11-18",
-          "localizedDescription": "Mejoras en toda la app.\r\nCorrecciones visuales.",
+          "localizedDescription": "Mejoras en toda la app.\nCorrecciones visuales.",
           "downloadURL": "https://github.com/Atypicapp/I3D/releases/download/v0.6.0/I3D.ipa",
           "size": 1732664,
           "minOSVersion": "17.0"
@@ -85,13 +85,24 @@
       "appPermissions": {
         "entitlements": [],
         "privacy": {
-          "NSPhotoLibraryAddUsageDescription": "Para guardar en Fotos las imágenes y vídeos de tus publicaciones."
+          "NSPhotoLibraryAddUsageDescription": "Para guardar en Fotos las imágenes y vídeos de tus publicaciones y catálogos."
         }
       },
-      "screenshots": []
+      "screenshots": [],
+      "screenshotURLs": []
     }
   ],
   "news": [
+    {
+      "title": "Catálogos con hoja de pedido",
+      "identifier": "catalogos",
+      "caption": "Crea catálogos con tus productos, publícalos gratis con un enlace y recibe los pedidos por WhatsApp, Instagram o email.",
+      "date": "2026-11-18",
+      "tintColor": "#F28C28",
+      "appID": "com.atypicapp.i3d",
+      "notify": false,
+      "imageURL": "https://raw.githubusercontent.com/Atypicapp/I3D/main/imagenes/catalogos.png"
+    },
     {
       "title": "Bienvenido a I3D",
       "identifier": "bienvenida-i3d",
@@ -99,7 +110,12 @@
       "date": "2026-11-17",
       "tintColor": "#F28C28",
       "appID": "com.atypicapp.i3d",
-      "notify": false
+      "notify": false,
+      "imageURL": "https://raw.githubusercontent.com/Atypicapp/I3D/main/imagenes/noticia.png"
     }
+  ],
+  "headerURL": "https://raw.githubusercontent.com/Atypicapp/I3D/main/imagenes/cabecera.png",
+  "featuredApps": [
+    "com.atypicapp.i3d"
   ]
 }
