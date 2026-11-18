@@ -18,6 +18,14 @@
       "category": "utilities",
       "versions": [
         {
+          "version": "0.8.0",
+          "date": "2026-11-18",
+          "localizedDescription": "Unir cambios de la carpeta compartida\r\nCobros (Inicio › Cobros, y en cada pedido)\r\nHoja de pedido del catálogo",
+          "downloadURL": "https://github.com/Atypicapp/I3D/releases/download/v0.8.0/I3D.ipa",
+          "size": 2747958,
+          "minOSVersion": "17.0"
+        },
+        {
           "version": "0.7.0",
           "date": "2026-11-18",
           "localizedDescription": "### **Lo nuevo**\r\n\r\n1. Clientes como CRM:\r\n\r\n- Cada cliente tiene una etapa que la app calcula sola: contacto, con presupuesto, cliente, recurrente o inactivo (más de 120 días sin pedir).\r\n- Ficha con compras, gasto, ticket medio, lo que más pide, cómo os conoció, etiquetas e historial de contactos.\r\n- Seguimientos con aviso a las 10:00, que también aparecen en Inicio.\r\n- Filtros para ver quién compró y quién no.\r\n\r\n2. Estadísticas (Inicio › Herramientas):\r\n\r\n- Ventas, beneficio, porcentaje de presupuestos aceptados y clientes que repiten.\r\n- Gráfica por meses, productos más pedidos, colores y combinaciones más pedidas, material gastado, canales y días de la semana.\r\n- Recomendaciones automáticas, por ejemplo presupuestos sin respuesta o productos con poco margen.\r\n- Pedido desde mensaje:\r\n- Pegas un email o DM, o eliges una captura, y la app lee el texto.\r\n- Con Apple Intelligence, o con un método más simple si no está disponible, saca el cliente, los productos y las cantidades.\r\n- Prepara un resumen para que el cliente dé el OK (copiar, WhatsApp, Instagram) y crea el presupuesto.\r\n- Respuestas rápidas: 9 plantillas de inicio (primer mensaje, precios, envíos, llamada a la acción…). Se pueden crear con Apple Intelligence, usar con un cliente concreto, y quedan apuntadas en su historial.\r\n- Responder comentario: pegas el comentario y te da 3 respuestas, siempre sin precios.\r\n- Calcular con carpetas: agrupar, filtrar y ordenar. Para mover un cálculo a una carpeta, mantén pulsado sobre él.\r\n\r\n3. Pedidos:\r\n\r\n- Prioridad: baja, normal, alta o urgente.\r\n- Agrupar por estado, prioridad, fecha de entrega, cliente o mes.\r\n- Ordenar a mano arrastrando, con el botón «Ordenar».\r\n- Plan de impresión: si hay 2 o más pedidos aceptados, sale un aviso. El plan: agrupa las piezas con los mismos colores; forma tandas que caben en el AMS; avisa si falta filamento; da consejos para gastar menos en purga.",
