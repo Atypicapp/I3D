@@ -88,8 +88,34 @@
           "NSPhotoLibraryAddUsageDescription": "Para guardar en Fotos las imágenes y vídeos de tus publicaciones y catálogos."
         }
       },
-      "screenshots": [],
-      "screenshotURLs": []
+      "screenshots": [
+        {
+          "imageURL": "https://raw.githubusercontent.com/Atypicapp/I3D/main/capturas/6E8721FD-25B3-42E8-9E73-C522DA04F8A5_4_5005_c.jpeg",
+          "width": 281,
+          "height": 612
+        },
+        {
+          "imageURL": "https://raw.githubusercontent.com/Atypicapp/I3D/main/capturas/8E9E4F36-9131-48FB-BA1A-CD1F4DB6C636_4_5005_c.jpeg",
+          "width": 281,
+          "height": 612
+        },
+        {
+          "imageURL": "https://raw.githubusercontent.com/Atypicapp/I3D/main/capturas/D2D6FCA7-A1C3-4B3F-931F-C54A7AD06D12_4_5005_c.jpeg",
+          "width": 281,
+          "height": 612
+        },
+        {
+          "imageURL": "https://raw.githubusercontent.com/Atypicapp/I3D/main/capturas/F8D7BD20-47F7-48A9-A3D9-6350B213D72B_4_5005_c.jpeg",
+          "width": 281,
+          "height": 612
+        }
+      ],
+      "screenshotURLs": [
+        "https://raw.githubusercontent.com/Atypicapp/I3D/main/capturas/6E8721FD-25B3-42E8-9E73-C522DA04F8A5_4_5005_c.jpeg",
+        "https://raw.githubusercontent.com/Atypicapp/I3D/main/capturas/8E9E4F36-9131-48FB-BA1A-CD1F4DB6C636_4_5005_c.jpeg",
+        "https://raw.githubusercontent.com/Atypicapp/I3D/main/capturas/D2D6FCA7-A1C3-4B3F-931F-C54A7AD06D12_4_5005_c.jpeg",
+        "https://raw.githubusercontent.com/Atypicapp/I3D/main/capturas/F8D7BD20-47F7-48A9-A3D9-6350B213D72B_4_5005_c.jpeg"
+      ]
     }
   ],
   "news": [
