@@ -18,6 +18,14 @@
       "category": "utilities",
       "versions": [
         {
+          "version": "0.10.0",
+          "date": "2026-11-19",
+          "localizedDescription": "Mejoras generales al generar web.",
+          "downloadURL": "https://github.com/Atypicapp/I3D/releases/download/v0.10.0/I3D.ipa",
+          "size": 3201027,
+          "minOSVersion": "17.0"
+        },
+        {
           "version": "0.9.1",
           "date": "2026-11-18",
           "localizedDescription": "Mejoras generales en la App",
