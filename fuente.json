@@ -101,11 +101,6 @@
           "height": 874
         },
         {
-          "imageURL": "https://raw.githubusercontent.com/Atypicapp/I3D/main/capturas/3-pedidos.png",
-          "width": 281,
-          "height": 612
-        },
-        {
           "imageURL": "https://raw.githubusercontent.com/Atypicapp/I3D/main/capturas/4-inventario.png",
           "width": 402,
           "height": 874
@@ -114,7 +109,6 @@
       "screenshotURLs": [
         "https://raw.githubusercontent.com/Atypicapp/I3D/main/capturas/1-inicio.png",
         "https://raw.githubusercontent.com/Atypicapp/I3D/main/capturas/2-calcular.png",
-        "https://raw.githubusercontent.com/Atypicapp/I3D/main/capturas/3-pedidos.png",
         "https://raw.githubusercontent.com/Atypicapp/I3D/main/capturas/4-inventario.png"
       ]
     }
