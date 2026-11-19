@@ -12,7 +12,7 @@ de pedido.
 Sin cuentas, sin servidores propios, sin publicidad y sin analíticas.
 
 <!-- capturas:inicio -->
-<p align="center"><img src="capturas/1-inicio.jpg" width="200" alt="Captura de I3D"> <img src="capturas/2-calcular.png" width="200" alt="Captura de I3D"> <img src="capturas/3-pedidos.png" width="200" alt="Captura de I3D"> <img src="capturas/4-inventario.png" width="200" alt="Captura de I3D"> <img src="capturas/IMG_0519.png" width="200" alt="Captura de I3D"> <img src="capturas/IMG_0520.png" width="200" alt="Captura de I3D"></p>
+<p align="center"><img src="capturas/2-calcular.png" width="200" alt="Captura de I3D"> <img src="capturas/3-pedidos.png" width="200" alt="Captura de I3D"> <img src="capturas/4-inventario.png" width="200" alt="Captura de I3D"> <img src="capturas/IMG_0519.png" width="200" alt="Captura de I3D"> <img src="capturas/IMG_0520.png" width="200" alt="Captura de I3D"> <img src="capturas/IMG_0522.png" width="200" alt="Captura de I3D"></p>
 <!-- capturas:fin -->
 
 ## Qué hace
