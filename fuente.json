@@ -85,7 +85,8 @@
       "appPermissions": {
         "entitlements": [],
         "privacy": {
-          "NSPhotoLibraryAddUsageDescription": "Para guardar en Fotos las imágenes y vídeos de tus publicaciones y catálogos."
+          "NSPhotoLibraryAddUsageDescription": "Para guardar en Fotos las imágenes y vídeos de tus publicaciones y catálogos.",
+          "NSCameraUsageDescription": "Para hacer fotos del pedido terminado y mandárselas al cliente."
         }
       },
       "screenshots": [
