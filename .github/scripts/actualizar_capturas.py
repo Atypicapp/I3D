@@ -85,6 +85,27 @@ for noticia in fuente.get("news", []):
 
 fuente["featuredApps"] = [app["bundleIdentifier"]]
 
+# Galería de capturas en el README (entre las marcas)
+if os.path.isfile("README.md"):
+    with open("README.md", encoding="utf-8") as f:
+        readme = f.read()
+    ini, fin = "<!-- capturas:inicio -->", "<!-- capturas:fin -->"
+    if ini in readme and fin in readme:
+        if capturas:
+            fotos = " ".join(
+                f'<img src="capturas/{quote(c["imageURL"].rsplit("/", 1)[-1], safe="%")}" width="200" alt="Captura de I3D">'
+                for c in capturas[:6]
+            )
+            galeria = f"{ini}\n<p align=\"center\">{fotos}</p>\n{fin}"
+        else:
+            galeria = f"{ini}\n{fin}"
+        antes, resto = readme.split(ini, 1)
+        _, despues = resto.split(fin, 1)
+        nuevo = antes + galeria + despues
+        if nuevo != readme:
+            with open("README.md", "w", encoding="utf-8") as f:
+                f.write(nuevo)
+
 with open("fuente.json", "w", encoding="utf-8") as f:
     json.dump(fuente, f, ensure_ascii=False, indent=2)
     f.write("\n")
