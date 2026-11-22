@@ -1,12 +1,15 @@
 name: Actualizar fuente
 
-# - Al publicar una Release con un .ipa: añade esa versión a fuente.json.
+# - Cada vez que se publica, edita o borra una Release, pone fuente.json al día
+#   mirando TODAS las Releases. Las pre-releases (betas) nunca entran, así que
+#   SideStore solo avisa de las oficiales. Si la versión de dentro del .ipa no
+#   coincide con la etiqueta, no la añade y sale en rojo.
 # - Al subir o borrar imágenes en capturas/ o imagenes/: actualiza las
-#   capturas, la cabecera y las imágenes de las noticias.
-# SideStore lee fuente.json y lo muestra todo.
+#   capturas, la cabecera, las noticias y la galería del README.
+# También se puede lanzar a mano (Actions > Actualizar fuente > Run workflow).
 on:
   release:
-    types: [published, edited]
+    types: [published, edited, deleted]
   push:
     branches: [main]
     paths:
@@ -17,8 +20,8 @@ on:
 permissions:
   contents: write
 
-# Al publicar, GitHub a veces lanza el proceso dos veces seguidas: así se
-# ejecutan de una en una y la segunda ve que ya está hecho.
+# Se ejecutan de una en una. Como cada ejecución mira todas las Releases,
+# aunque GitHub salte alguna intermedia, la última deja la fuente bien.
 concurrency:
   group: actualizar-fuente
   cancel-in-progress: false
@@ -31,8 +34,11 @@ jobs:
         with:
           ref: main
 
-      - name: Añadir la versión a fuente.json
-        if: github.event_name == 'release'
+      - name: Poner las versiones de fuente.json al día
+        id: fuente
+        if: github.event_name != 'push'
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: python3 .github/scripts/actualizar_fuente.py
 
       - name: Capturas, cabecera y noticias
@@ -47,10 +53,16 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add fuente.json README.md
-          if [ "${{ github.event_name }}" = "release" ]; then
-            git commit -m "Fuente: versión ${{ github.event.release.tag_name }}"
-          else
+          if [ "${{ github.event_name }}" = "push" ]; then
             git commit -m "Fuente: capturas e imágenes"
+          else
+            git commit -m "Fuente: ${{ github.event.action || 'manual' }} ${{ github.event.release.tag_name }}"
           fi
           git pull --rebase origin main
           git push
+
+      - name: Avisar si el .ipa no es la versión de la etiqueta
+        if: steps.fuente.outputs.error == 'si'
+        run: |
+          echo "La versión de dentro del .ipa no coincide con la etiqueta de la Release. Mira el resumen de esta ejecución."
+          exit 1
