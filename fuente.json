@@ -18,75 +18,19 @@
       "category": "utilities",
       "versions": [
         {
+          "version": "0.14.0",
+          "date": "2026-11-25",
+          "localizedDescription": "• Generador OpenSCAD: en la personalización del producto, proyecto del generador, valores fijos y variable OpenSCAD de cada texto, color y opción. Cada unidad que pide el cliente lleva en el mensaje un código con lo que eligió.\n• Nuevas listas para elegir (dibujo, forma, tipografía…) con foto por opción: en la web la vista previa cambia al elegirla.\n• En el pedido, «Archivos para imprimir»: abre el generador del estudio con los códigos ya puestos o los copia. La dirección del generador va en Catálogos › Ajustes de la web (cada estudio la suya).\n• Ayuda del dominio propio con los registros A para el dominio entero.\n• Ofertas: Black Friday, Cyber Monday, Navidad, rebajas, San Valentín y personalizadas, con descuento, productos, fechas e imagen.\n• En la web: banner con cuenta atrás, aviso «Muy pronto», filtro de ofertas, cinta con el descuento, precio de antes tachado y lo que ahorra el cliente. Al terminar, la web vuelve sola a los precios normales.\n• En los productos: incluir o quitar cada producto de una oferta o ponerle un precio de oferta propio. Presupuestos, PDF e imagen para redes con el precio de oferta.",
+          "downloadURL": "https://github.com/Atypicapp/I3D/releases/download/v0.14.0/I3D.ipa",
+          "size": 3882055,
+          "minOSVersion": "17.0"
+        },
+        {
           "version": "0.12.1",
           "date": "2026-11-22",
           "localizedDescription": "• Personalización: al elegir color se pinta la pieza entera (antes, en piezas planas como unos pendientes, solo cambiaba el borde).\n• La miniatura de los cálculos también cambia de color entera.",
           "downloadURL": "https://github.com/Atypicapp/I3D/releases/download/v0.12.1/I3D.ipa",
           "size": 3653605,
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "0.9.1",
-          "date": "2026-11-18",
-          "localizedDescription": "Mejoras generales en la App",
-          "downloadURL": "https://github.com/Atypicapp/I3D/releases/download/v0.9.1/I3D.ipa",
-          "size": 2968543,
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "0.9.0",
-          "date": "2026-11-18",
-          "localizedDescription": "Mejoras generales",
-          "downloadURL": "https://github.com/Atypicapp/I3D/releases/download/v0.9.0/I3D.ipa",
-          "size": 2929319,
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "0.8.1",
-          "date": "2026-11-18",
-          "localizedDescription": "bug fixed",
-          "downloadURL": "https://github.com/Atypicapp/I3D/releases/download/v0.8.1/I3D.ipa",
-          "size": 2844520,
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "0.8.0",
-          "date": "2026-11-18",
-          "localizedDescription": "Unir cambios de la carpeta compartida\nCobros (Inicio › Cobros, y en cada pedido)\nHoja de pedido del catálogo",
-          "downloadURL": "https://github.com/Atypicapp/I3D/releases/download/v0.8.0/I3D.ipa",
-          "size": 2747958,
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "0.7.0",
-          "date": "2026-11-18",
-          "localizedDescription": "Lo nuevo\n\n1. Clientes como CRM:\n\n• Cada cliente tiene una etapa que la app calcula sola: contacto, con presupuesto, cliente, recurrente o inactivo (más de 120 días sin pedir).\n• Ficha con compras, gasto, ticket medio, lo que más pide, cómo os conoció, etiquetas e historial de contactos.\n• Seguimientos con aviso a las 10:00, que también aparecen en Inicio.\n• Filtros para ver quién compró y quién no.\n\n2. Estadísticas (Inicio › Herramientas):\n\n• Ventas, beneficio, porcentaje de presupuestos aceptados y clientes que repiten.\n• Gráfica por meses, productos más pedidos, colores y combinaciones más pedidas, material gastado, canales y días de la semana.\n• Recomendaciones automáticas, por ejemplo presupuestos sin respuesta o productos con poco margen.\n• Pedido desde mensaje:\n• Pegas un email o DM, o eliges una captura, y la app lee el texto.\n• Con Apple Intelligence, o con un método más simple si no está disponible, saca el cliente, los productos y las cantidades.\n• Prepara un resumen para que el cliente dé el OK (copiar, WhatsApp, Instagram) y crea el presupuesto.\n• Respuestas rápidas: 9 plantillas de inicio (primer mensaje, precios, envíos, llamada a la acción…). Se pueden crear con Apple Intelligence, usar con un cliente concreto, y quedan apuntadas en su historial.\n• Responder comentario: pegas el comentario y te da 3 respuestas, siempre sin precios.\n• Calcular con carpetas: agrupar, filtrar y ordenar. Para mover un cálculo a una carpeta, mantén pulsado sobre él.\n\n3. Pedidos:\n\n• Prioridad: baja, normal, alta o urgente.\n• Agrupar por estado, prioridad, fecha de entrega, cliente o mes.\n• Ordenar a mano arrastrando, con el botón «Ordenar».\n• Plan de impresión: si hay 2 o más pedidos aceptados, sale un aviso. El plan: agrupa las piezas con los mismos colores; forma tandas que caben en el AMS; avisa si falta filamento; da consejos para gastar menos en purga.",
-          "downloadURL": "https://github.com/Atypicapp/I3D/releases/download/v0.7.0/I3D.ipa",
-          "size": 2223996,
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "0.6.0",
-          "date": "2026-11-18",
-          "localizedDescription": "Mejoras en toda la app.\nCorrecciones visuales.",
-          "downloadURL": "https://github.com/Atypicapp/I3D/releases/download/v0.6.0/I3D.ipa",
-          "size": 1732664,
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "0.5.1",
-          "date": "2026-11-17",
-          "localizedDescription": "Corrección de errores",
-          "downloadURL": "https://github.com/Atypicapp/I3D/releases/download/v0.5.1/I3D.ipa",
-          "size": 1379384,
-          "minOSVersion": "17.0"
-        },
-        {
-          "version": "0.5.0",
-          "date": "2026-11-17",
-          "localizedDescription": "Primera versión",
-          "downloadURL": "https://github.com/Atypicapp/I3D/releases/download/v0.5.0/I3D.ipa",
-          "size": 1374526,
           "minOSVersion": "17.0"
         }
       ],
